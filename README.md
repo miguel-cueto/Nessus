@@ -64,9 +64,3 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 2. Run Windows Updates on the virtual machine to install available security patches and updates.
 3. Perform another vulnerability scan to verify the remediation efforts.
 4. Review the remaining vulnerabilities and consider additional remediation steps as necessary.
-
-### Step 9: Document and Share
-1. Document the steps taken, findings, and lessons learned throughout the vulnerability management lab.
-2. Share your project on GitHub or any other preferred platform for collaboration and learning purposes.
-
-By following this comprehensive guide, you will gain hands-on experience in setting up a vulnerability management lab, conducting vulnerability scans, analyzing scan results, and remediating identified vulnerabilities. This project will provide valuable insights into the vulnerability management process and enhance your skills in this field.

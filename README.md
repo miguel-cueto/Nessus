@@ -34,7 +34,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
   
 2. Create a new resource group named "Nessuslab"
 3. Name the virtual machine "nessus-vm."
-4. Select the geographic region "West US 2" and availability zone "zone 3"
+4. Select the geographic region "East US 2" and availability zone "zone 3"
 
 <p align="center">
 <img src="https://i.imgur.com/UKcpGJA.png" height="80%" width="80%" alt="Nessus 107"/>
@@ -131,8 +131,8 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
    - Open a web browser on your Azure VM and go to `https://localhost:8834/`.
 
 2. **Create a New Scan**
-   - Provide a name for the scan.
-   - Enter the IP address of the Windows 10 virtual machine as the target.
+   - Provide a name "Windows 10 Single Host" for the scan.
+   - In the Azure search tool search "Virtual Machine" > click on "nessuslab-vm" > copy the public IP address and paste it on "Targets" section of Nessus Essentials.
    - Optionally, configure additional scan settings.
    - Save the scan configuration.
 

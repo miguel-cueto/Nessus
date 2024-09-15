@@ -57,11 +57,6 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
   
 7. Under "Networking," navigate to the "NIC Network Security Group" and click Advanced
 
-<p align="center">
-<img src="https://i.imgur.com/SHIqtV3.png" height="80%" width="80%" alt="Azure"/>
-<br />
-<br />
-  
 8. Click on "Create new" under "Configure network security group
 " and remove the default inbound security rule and create a new one with the following settings:
   - Source: Any
@@ -73,46 +68,56 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
   - Priority: 100
   - Name: "DANGER_ANY_IN"
 
-<p align="center">
-<img src="https://i.imgur.com/fzmFOx1.png" height="80%" width="80%" alt="Azure"/>
-<br />
-<br />
-  
-<p align="center">
-<img src="https://i.imgur.com/FeXE8ps.png" height="80%" width="80%" alt="Azure"/>
-<br />
-<br />
-    
-<p align="center">
-<img src="https://i.imgur.com/eVzMkVf.png" height="80%" width="80%" alt="Azure"/>
-<br />
-<br />
-    
-<p align="center">
-<img src="https://i.imgur.com/DIydrmv.png" height="80%" width="80%" alt="Azure"/>
-<br />
-<br />
-
 9. Review and create the virtual machine.
     
 <p align="center">
-<img src="https://i.imgur.com/oT9BVc5.png" height="80%" width="80%" alt="Azure"/>
+<img src="https://i.imgur.com/oT9BVc5.png" height="80%" width="80%" alt="Nessus 110"/>
 <br />
 <br />
   
 
-3. **Connect to the Virtual Machine**
+10. **Connect to the Virtual Machine**
    - Once the VM is deployed, go to the "Virtual Machines" section in the Azure Portal.
    - Select your VM and click on "Connect" to download the RDP file.
-   - Open the RDP file and connect to your VM using the credentials you set up.
+   - Open the RDP file and connect to your VM using the credentials you set up > Click "Yes" on the certificate windows
 
-### Step 2: Install Deprecated Software
-1. **Download and Install Deprecated Software**
-   - Connect to your Azure VM using RDP.
-   - Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
-   - Install the old Firefox version on the Windows 10 virtual machine.
+<p align="center">
+<img src="https://i.imgur.com/yByOqwW.png" height="80%" width="80%" alt="Azure 66"/>
+<br />
+<br />
+  
+11. In the VM set up toggle "no" on all privacy settings, press "yes" for networks, and start Microsoft Edge without your data
 
-### Step 3: Download and Install Nessus Essentials
+<p align="center">
+<img src="https://i.imgur.com/YNGZg98.png" height="80%" width="80%" alt="Azure 67"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/jU7WItx.png" height="80%" width="80%" alt="Azure 68"/>
+<br />
+<br />
+  
+12. Open the Windows Defender Firewall (wf.msc) in the VM > click Windows Defender Firewall Properties and turn off the firewall for all profiles (Domain, Private, and Public).
+
+<p align="center">
+<img src="https://i.imgur.com/R3UArjv.png" height="80%" width="80%" alt="Azure 69"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/IuoA6EW.png" height="80%" width="80%" alt="Azure 70"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/bJkJicN.png" height="80%" width="80%" alt="Azure 71"/>
+<br />
+<br />
+  
+13. From your local machine, ping the virtual machine's IP address to ensure it is accepting ICMP echo requests.
+
+### Step 2: Download and Install Nessus Essentials
 1. **Visit the Nessus Essentials Download Page**
    - Go to Nessus Essentials.
    - Fill out the registration form to receive an activation code via email.
@@ -120,6 +125,12 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 2. **Download and Install Nessus Essentials**
    - Download the appropriate Nessus Essentials installer for Windows.
    - Install Nessus Essentials on your Azure VM using the activation code.
+
+### Step 3: Install Deprecated Software
+1. **Download and Install Deprecated Software**
+   - Connect to your Azure VM using RDP.
+   - Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
+   - Install the old Firefox version on the Windows 10 virtual machine.
 
 ### Step 4: Configure Nessus Essentials
 1. **Open the Nessus Essentials Web Interface**

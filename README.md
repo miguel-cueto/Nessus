@@ -126,13 +126,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
    - Click "View Downloads" for "Tenable Nessus" then click on "Download"
    - Install Nessus Essentials by clicking on "Connect via SSL" > continue to localhost (unsafe) > Continue > click on "Register for Nessus Essentials" then continue > skip and apply your activation code.
 
-### Step 3: Install Deprecated Software
-1. **Download and Install Deprecated Software**
-   - Connect to your Azure VM using RDP.
-   - Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
-   - Install the old Firefox version on the Windows 10 virtual machine.
-
-### Step 4: Configure Nessus Essentials
+### Step 3: Configure Nessus Essentials
 1. **Open the Nessus Essentials Web Interface**
    - Open a web browser on your Azure VM and go to `https://localhost:8834/`.
 
@@ -142,7 +136,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
    - Optionally, configure additional scan settings.
    - Save the scan configuration.
 
-### Step 5: Perform Vulnerability Scans
+### Step 4: Perform Vulnerability Scans
 1. **Launch the Initial Vulnerability Scan**
    - Run the scan without credentials.
    - Review the scan results and identify vulnerabilities.
@@ -152,7 +146,23 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
    - Launch a new scan with credentials to discover additional vulnerabilities.
    - Compare the scan results with and without credentials.
 
-### Step 6: Remediate Vulnerabilities
+### Step 5: Install Deprecated Software
+1. **Download and Install Deprecated Software**
+   - Connect to your Azure VM using RDP.
+   - Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
+   - Install the old Firefox version on the Windows 10 virtual machine.
+
+### Step 6: Perform Vulnerability Scans
+1. **Launch the Initial Vulnerability Scan**
+   - Run the scan without credentials.
+   - Review the scan results and identify vulnerabilities.
+
+2. **Configure Credential-Based Scanning**
+   - Provide the username and password for the Windows 10 virtual machine.
+   - Launch a new scan with credentials to discover additional vulnerabilities.
+   - Compare the scan results with and without credentials.
+
+### Step 7: Remediate Vulnerabilities
 1. **Uninstall Deprecated Software**
    - Remove the old version of Firefox from the Windows 10 virtual machine.
 

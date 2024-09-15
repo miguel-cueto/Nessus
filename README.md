@@ -119,12 +119,12 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 
 ### Step 2: Download and Install Nessus Essentials
 1. **Visit the Nessus Essentials Download Page**
-   - Go to Nessus Essentials.
+   - Go to Nessus Essentials. (https://www.tenable.com/products/nessus/nessus-essentials)
    - Fill out the registration form to receive an activation code via email.
 
 2. **Download and Install Nessus Essentials**
-   - Download the appropriate Nessus Essentials installer for Windows.
-   - Install Nessus Essentials on your Azure VM using the activation code.
+   - Click "View Downloads" for "Tenable Nessus" then click on "Download"
+   - Install Nessus Essentials by clicking on "Connect via SSL" > continue to localhost (unsafe) > Continue > click on "Register for Nessus Essentials" then continue > skip and apply your activation code.
 
 ### Step 3: Install Deprecated Software
 1. **Download and Install Deprecated Software**

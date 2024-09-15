@@ -32,19 +32,19 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
 <br />
   
-2. Create a new resource group named "honeypotlab"
-3. Name the virtual machine "honeypot-vm."
-4. Select the geographic region "West US 2" and availability zone "zone 2"
+2. Create a new resource group named "Nessuslab"
+3. Name the virtual machine "nessus-vm."
+4. Select the geographic region "West US 2" and availability zone "zone 3"
 
 <p align="center">
-<img src="https://i.imgur.com/UKcpGJA.png" height="80%" width="80%" alt="Azure"/>
+<img src="https://i.imgur.com/UKcpGJA.png" height="80%" width="80%" alt="Nessus 107"/>
 <br />
 <br />
   
 5. Select the image "Windows 10 Pro, version 22H2 - x64 Gen 2."
 
 <p align="center">
-<img src="https://i.imgur.com/TtI8Z8A.png" height="80%" width="80%" alt="Azure"/>
+<img src="https://i.imgur.com/TtI8Z8A.png" height="80%" width="80%" alt="Nessus 108"/>
 <br />
 <br />
   

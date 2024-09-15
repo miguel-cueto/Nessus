@@ -1,66 +1,153 @@
-# Nessus Comprehensive Vulnerability Management
+# Nessus Comprehensive Vulnerability Management on Microsoft Azure
 
 ## Description
-This project provides a step-by-step guide for setting up a Nessus vulnerability management environment, conducting vulnerability scans, and remediating identified vulnerabilities. The lab involves installing VMware Workstation Player, creating a Windows 10 virtual machine, installing deprecated software, and using Nessus Essentials to perform vulnerability scans.
+This project provides a step-by-step guide for setting up a Nessus vulnerability management environment, conducting vulnerability scans, and remediating identified vulnerabilities using Microsoft Azure.
 
 ## Language and Utilities
-- VMware Workstation Player
-- Windows 10 ISO
+- Microsoft Azure
+- Windows 10
 - Nessus Essentials
 
 ## Environments Used
-- Host Operating System (Windows, macOS, or Linux)
-- VMware Workstation Player
-- Windows 10 Virtual Machine
+- Host Operating System (Windows)
+- Microsoft Azure Virtual Machine
 - Nessus Essentials (Vulnerability Scanner)
 
 ## Program Walkthrough
 
-### Step 1: Install VMware Workstation Player
-1. Download VMware Workstation Player from the official website: [https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
-2. Follow the installation instructions provided by VMware.
+### Step 1: Set Up Azure Virtual Machines
+### Step 1: Create an Azure Subscription
+1. Go to Azure (https://azure.microsoft.com/en-us/free/) and create a new Azure subscription. You will receive $200 worth of free credits for the first month.
 
-### Step 2: Download Windows 10 ISO
-1. Visit the Microsoft Software Download website: [https://www.microsoft.com/en-us/software-download/windows10](https://www.microsoft.com/en-us/software-download/windows10)
-2. Click on "Download tool now" under "Create Windows 10 installation media."
-3. Run the downloaded tool and select "Create installation media (USB flash drive, DVD, or ISO file) for another PC."
-4. Choose the appropriate language, edition, and architecture for Windows 10.
-5. Select "ISO file" as the media option and specify a location to save the ISO file.
+<p align="center">
+<img src="https://i.imgur.com/1JxWLpJ.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+### Step 2: Create a Virtual Machine
+1. In the Azure portal (portal.azure.com), go to the search engine on the top navigate to "Virtual Machines" and click "Create" > click "Azure virtual machine."
 
-### Step 3: Create a Windows 10 Virtual Machine
-1. Open VMware Workstation Player and click on "Create a New Virtual Machine."
-2. Select "I will install the operating system later" and click "Next."
-3. Choose the appropriate operating system (e.g., Microsoft Windows) and version (e.g., Windows 10 x64).
-4. Specify a name and location for the virtual machine.
-5. Configure the virtual machine settings as desired (e.g., allocated RAM, disk size).
-6. Click "Finish" to create the virtual machine.
-7. Power on the virtual machine and follow the on-screen instructions to install Windows 10 from the downloaded ISO file.
+<p align="center">
+<img src="https://i.imgur.com/X2VZKTV.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+2. Create a new resource group named "honeypotlab"
+3. Name the virtual machine "honeypot-vm."
+4. Select the geographic region "West US 2" and availability zone "zone 2"
 
-### Step 4: Install Deprecated Software
-1. Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
-2. Install the old Firefox version on the Windows 10 virtual machine.
+<p align="center">
+<img src="https://i.imgur.com/UKcpGJA.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+5. Select the image "Windows 10 Pro, version 22H2 - x64 Gen 2."
 
-### Step 5: Download and Install Nessus Essentials
-1. Visit the Nessus Essentials download page: [https://www.tenable.com/products/nessus/nessus-essentials](https https://www.tenable.com/products/nessus/nessus-essentials)
-2. Fill out the registration form and submit it to receive an activation code via email.
-3. Download the appropriate Nessus Essentials installer for your host operating system.
-4. Install Nessus Essentials using the provided activation code.
+<p align="center">
+<img src="https://i.imgur.com/TtI8Z8A.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+6. Create a username and password for the VM, remember these credentials, and check the box under "Licensing" that reads "I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights" before clicking on "Next : Disk >" and "Next : Networking >"
 
-### Step 6: Configure Nessus Essentials
-1. Open the Nessus Essentials web interface (e.g., `https://localhost:8834/`).
-2. Create a new scan by providing a name and the IP address of the Windows 10 virtual machine as the target.
-3. Optionally, configure additional scan settings as desired.
-4. Save the scan configuration.
+<p align="center">
+<img src="https://i.imgur.com/8ekpv7t.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+7. Under "Networking," navigate to the "NIC Network Security Group" and click Advanced
 
-### Step 7: Perform Vulnerability Scans
-1. Launch the initial vulnerability scan without credentials.
-2. Review the scan results and vulnerabilities identified.
-3. Configure credential-based scanning by providing the username and password for the Windows 10 virtual machine.
-4. Launch a new scan with credentials to discover additional vulnerabilities.
-5. Compare the scan results with and without credentials.
+<p align="center">
+<img src="https://i.imgur.com/SHIqtV3.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+8. Click on "Create new" under "Configure network security group
+" and remove the default inbound security rule and create a new one with the following settings:
+  - Source: Any
+  - Source port ranges: *
+  - Destination: Any
+  - Destination port ranges: *
+  - Protocol: Any
+  - Action: Allow
+  - Priority: 100
+  - Name: "DANGER_ANY_IN"
 
-### Step 8: Remediate Vulnerabilities
-1. Uninstall the deprecated Firefox version from the Windows 10 virtual machine.
-2. Run Windows Updates on the virtual machine to install available security patches and updates.
-3. Perform another vulnerability scan to verify the remediation efforts.
-4. Review the remaining vulnerabilities and consider additional remediation steps as necessary.
+<p align="center">
+<img src="https://i.imgur.com/fzmFOx1.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/FeXE8ps.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/eVzMkVf.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/DIydrmv.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+
+9. Review and create the virtual machine.
+    
+<p align="center">
+<img src="https://i.imgur.com/oT9BVc5.png" height="80%" width="80%" alt="Azure"/>
+<br />
+<br />
+  
+
+3. **Connect to the Virtual Machine**
+   - Once the VM is deployed, go to the "Virtual Machines" section in the Azure Portal.
+   - Select your VM and click on "Connect" to download the RDP file.
+   - Open the RDP file and connect to your VM using the credentials you set up.
+
+### Step 2: Install Deprecated Software
+1. **Download and Install Deprecated Software**
+   - Connect to your Azure VM using RDP.
+   - Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
+   - Install the old Firefox version on the Windows 10 virtual machine.
+
+### Step 3: Download and Install Nessus Essentials
+1. **Visit the Nessus Essentials Download Page**
+   - Go to Nessus Essentials.
+   - Fill out the registration form to receive an activation code via email.
+
+2. **Download and Install Nessus Essentials**
+   - Download the appropriate Nessus Essentials installer for Windows.
+   - Install Nessus Essentials on your Azure VM using the activation code.
+
+### Step 4: Configure Nessus Essentials
+1. **Open the Nessus Essentials Web Interface**
+   - Open a web browser on your Azure VM and go to `https://localhost:8834/`.
+
+2. **Create a New Scan**
+   - Provide a name for the scan.
+   - Enter the IP address of the Windows 10 virtual machine as the target.
+   - Optionally, configure additional scan settings.
+   - Save the scan configuration.
+
+### Step 5: Perform Vulnerability Scans
+1. **Launch the Initial Vulnerability Scan**
+   - Run the scan without credentials.
+   - Review the scan results and identify vulnerabilities.
+
+2. **Configure Credential-Based Scanning**
+   - Provide the username and password for the Windows 10 virtual machine.
+   - Launch a new scan with credentials to discover additional vulnerabilities.
+   - Compare the scan results with and without credentials.
+
+### Step 6: Remediate Vulnerabilities
+1. **Uninstall Deprecated Software**
+   - Remove the old version of Firefox from the Windows 10 virtual machine.
+
+2. **Run Windows Updates**
+   - Install available security patches and updates on the virtual machine.
+
+3. **Perform Another Vulnerability Scan**
+   - Verify the remediation efforts by running another scan.
+   - Review the remaining vulnerabilities and take additional remediation steps as necessary.

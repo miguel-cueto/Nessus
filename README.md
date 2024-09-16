@@ -62,6 +62,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
   - Source: Any
   - Source port ranges: *
   - Destination: Any
+  - Service: Custom
   - Destination port ranges: *
   - Protocol: Any
   - Action: Allow
@@ -133,12 +134,11 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 2. **Create a New Scan**
    - Provide a name "Windows 10 Single Host" for the scan.
    - In the Azure search tool search "Virtual Machine" > click on "nessuslab-vm" > copy the public IP address and paste it on "Targets" section of Nessus Essentials.
-   - Optionally, configure additional scan settings.
    - Save the scan configuration.
-
+     
 ### Step 4: Perform Vulnerability Scans
 1. **Launch the Initial Vulnerability Scan**
-   - Run the scan without credentials.
+   - Run the scan without credentials by clicking the play button (launch) on "Windows 10 Single Host"
    - Review the scan results and identify vulnerabilities.
 
 2. **Configure Credential-Based Scanning**

@@ -15,7 +15,6 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 
 ## Program Walkthrough
 
-### Step 1: Set Up Azure Virtual Machines
 ### Step 1: Create an Azure Subscription
 1. Go to Azure (https://azure.microsoft.com/en-us/free/) and create a new Azure subscription. You will receive $200 worth of free credits for the first month.
 
@@ -146,29 +145,10 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
    - Launch a new scan with credentials to discover additional vulnerabilities.
    - Compare the scan results with and without credentials.
 
-### Step 5: Install Deprecated Software
-1. **Download and Install Deprecated Software**
-   - Connect to your Azure VM using RDP.
-   - Download an old version of Firefox (e.g., Firefox 36.0.12) from a trusted source.
-   - Install the old Firefox version on the Windows 10 virtual machine.
-
-### Step 6: Perform Vulnerability Scans
-1. **Launch the Initial Vulnerability Scan**
-   - Run the scan without credentials.
-   - Review the scan results and identify vulnerabilities.
-
-2. **Configure Credential-Based Scanning**
-   - Provide the username and password for the Windows 10 virtual machine.
-   - Launch a new scan with credentials to discover additional vulnerabilities.
-   - Compare the scan results with and without credentials.
-
-### Step 7: Remediate Vulnerabilities
-1. **Uninstall Deprecated Software**
-   - Remove the old version of Firefox from the Windows 10 virtual machine.
-
-2. **Run Windows Updates**
+### Step 5: Remediate Vulnerabilities
+1. **Run Windows Updates**
    - Install available security patches and updates on the virtual machine.
 
-3. **Perform Another Vulnerability Scan**
+2. **Perform Another Vulnerability Scan**
    - Verify the remediation efforts by running another scan.
    - Review the remaining vulnerabilities and take additional remediation steps as necessary.

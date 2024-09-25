@@ -151,6 +151,11 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 12. Open the Windows Defender Firewall (wf.msc) in the VM > click Windows Defender Firewall Properties and turn off the firewall for all profiles (Domain, Private, and Public).
   
 <p align="center">
+<img src="https://i.imgur.com/NC1dObE.png" height="80%" width="80%" alt="Nessus 171"/>
+<br />
+<br />
+    
+<p align="center">
 <img src="https://i.imgur.com/bJkJicN.png" height="80%" width="80%" alt="Nessus 112"/>
 <br />
 <br />

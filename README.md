@@ -271,14 +271,73 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
            
 2. **Configure Credential-Based Scanning**
-   - Provide the username and password for the Windows 10 virtual machine.
-   - Launch a new scan with credentials to discover additional vulnerabilities.
-   - Compare the scan results with and without credentials.
+   - Provide the username and password for the Windows 10 virtual machine.                                      
+
+<p align="center">
+<img src="https://i.imgur.com/BvEeEnu.png" height="80%" width="80%" alt="Nessus 149"/>
+<br />
+<br />
+                                                
+<p align="center">
+<img src="https://i.imgur.com/6RJksGP.png" height="80%" width="80%" alt="Nessus 150"/>
+<br />
+<br />
+                                                
+<p align="center">
+<img src="https://i.imgur.com/WxjZJY6.png" height="80%" width="80%" alt="Nessus 151"/>
+<br />
+<br />
+                                                
+<p align="center">
+<img src="https://i.imgur.com/lVbL7cH.png" height="80%" width="80%" alt="Nessus 152"/>
+<br />
+<br />
+          
+   - Launch a new scan with credentials to discover additional vulnerabilities.                                      
+
+<p align="center">
+<img src="https://i.imgur.com/3R8fMA0.png" height="80%" width="80%" alt="Nessus 153"/>
+<br />
+<br />
+          
+   - Compare the scan results with and without credentials.                                      
+
+<p align="center">
+<img src="https://i.imgur.com/ns2Kn6T.png" height="80%" width="80%" alt="Nessus 193"/>
+<br />
+<br />
+                                                
+<p align="center">
+<img src="https://i.imgur.com/ihrlUfY.png" height="80%" width="80%" alt="Nessus 148"/>
+<br />
+<br />
+          
 
 ### Step 5: Remediate Vulnerabilities
 1. **Run Windows Updates**
    - Install available security patches and updates on the virtual machine.
 
+<p align="center">
+<img src="https://i.imgur.com/h3kt9fO.png" height="80%" width="80%" alt="Nessus 190"/>
+<br />
+<br />
+                                                
+<p align="center">
+<img src="https://i.imgur.com/D3HvY37.png" height="80%" width="80%" alt="Nessus 191"/>
+<br />
+<br />
+          
+<p align="center">
+<img src="https://i.imgur.com/MaFDuZr.png" height="80%" width="80%" alt="Nessus 192"/>
+<br />
+<br />
+    
 2. **Perform Another Vulnerability Scan**
-   - Verify the remediation efforts by running another scan.
+   - Verify the remediation efforts by running another scan.          
+
+<p align="center">
+<img src="https://i.imgur.com/KL1wvma.png" height="80%" width="80%" alt="Nessus 154"/>
+<br />
+<br />
+    
    - Review the remaining vulnerabilities and take additional remediation steps as necessary.

@@ -56,6 +56,11 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
   
 7. Under "Networking," navigate to the "NIC Network Security Group" and click Advanced
 
+<p align="center">
+<img src="https://i.imgur.com/MITIpHB.png" height="80%" width="80%" alt="Nessus 135"/>
+<br />
+<br />
+  
 8. Click on "Create new" under "Configure network security group
 " and remove the default inbound security rule and create a new one with the following settings:
   - Source: Any
@@ -68,6 +73,26 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
   - Priority: 100
   - Name: "DANGER_ANY_IN"
 
+<p align="center">
+<img src="https://i.imgur.com/zsSDKDL.png" height="80%" width="80%" alt="Nessus 136"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/BmeN3ap.png" height="80%" width="80%" alt="Nessus 137"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/TUJepoa.png" height="80%" width="80%" alt="Nessus 138"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/4lxO61N.png" height="80%" width="80%" alt="Nessus 139"/>
+<br />
+<br />
+  
 9. Review and create the virtual machine.
     
 <p align="center">

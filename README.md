@@ -254,7 +254,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
          
    - Save the scan configuration.
 
-## Step 4: Introduce Vulnerabilities and Rescan
+## Step 4: Introduce Vulnerabilities
 
 1. **In the VM, download an old version of "Firefox Setup 3.6.12.exe" (https://ftp.mozilla.org/pub/firefox/releases/3.6.12/win32/en-US/)
 2. **Install the old Firefox version 

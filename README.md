@@ -308,15 +308,20 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
    - Compare the scan results with and without credentials.                                      
 
 <p align="center">
-<img src="https://i.imgur.com/ns2Kn6T.png" height="80%" width="80%" alt="Nessus 193"/>
+<img src="https://i.imgur.com/yjud1g1.png" height="80%" width="80%" alt="Nessus 193"/>
 <br />
 <br />
                                                 
 <p align="center">
-<img src="https://i.imgur.com/ihrlUfY.png" height="80%" width="80%" alt="Nessus 148"/>
+<img src="https://i.imgur.com/BwKRNe2.png" height="80%" width="80%" alt="Nessus 194"/>
 <br />
 <br />
-          
+                                                     
+<p align="center">
+<img src="https://i.imgur.com/Q8G0nck.png" height="80%" width="80%" alt="Nessus 195"/>
+<br />
+<br />
+            
 
 ### Step 5: Remediate Vulnerabilities
 1. **Run Windows Updates**

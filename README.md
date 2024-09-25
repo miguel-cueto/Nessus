@@ -149,16 +149,6 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
   
 12. Open the Windows Defender Firewall (wf.msc) in the VM > click Windows Defender Firewall Properties and turn off the firewall for all profiles (Domain, Private, and Public).
-
-<p align="center">
-<img src="https://i.imgur.com/R3UArjv.png" height="80%" width="80%" alt="Nessus 115"/>
-<br />
-<br />
-  
-<p align="center">
-<img src="https://i.imgur.com/IuoA6EW.png" height="80%" width="80%" alt="Nessus 116"/>
-<br />
-<br />
   
 <p align="center">
 <img src="https://i.imgur.com/bJkJicN.png" height="80%" width="80%" alt="Nessus 112"/>
@@ -169,27 +159,117 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 
 ### Step 2: Download and Install Nessus Essentials
 1. **Visit the Nessus Essentials Download Page**
-   - Go to Nessus Essentials. (https://www.tenable.com/products/nessus/nessus-essentials)
+   - Go to Nessus Essentials. (https://www.tenable.com/products/nessus/nessus-essentials)  
+
+<p align="center">
+<img src="https://i.imgur.com/hXiP7Qu.png" height="80%" width="80%" alt="Nessus 121"/>
+<br />
+<br />
+    
    - Fill out the registration form to receive an activation code via email.
 
+<p align="center">
+<img src="https://i.imgur.com/24AyvoV.png" height="80%" width="80%" alt="Nessus 122"/>
+<br />
+<br />
+  
 2. **Download and Install Nessus Essentials**
-   - Click "View Downloads" for "Tenable Nessus" then click on "Download"
-   - Install Nessus Essentials by clicking on "Connect via SSL" > continue to localhost (unsafe) > Continue > click on "Register for Nessus Essentials" then continue > skip and apply your activation code.
+   - Click "View Downloads" for "Tenable Nessus" then click on "Download"  
 
+<p align="center">
+<img src="https://i.imgur.com/oIiy8Ju.png" height="80%" width="80%" alt="Nessus 124"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/pK41IKA.png" height="80%" width="80%" alt="Nessus 125"/>
+<br />
+<br />
+    
+   - Install Nessus Essentials by clicking on "Connect via SSL" > continue to localhost (unsafe) > Continue > click on "Register for Nessus Essentials" then continue > skip and apply your activation code.
+    
+<p align="center">
+<img src="https://i.imgur.com/RPQhNuI.png" height="80%" width="80%" alt="Nessus 126"/>
+<br />
+<br />
+        
+<p align="center">
+<img src="https://i.imgur.com/nNJ0sPd.png" height="80%" width="80%" alt="Nessus 127"/>
+<br />
+<br />
+        
+<p align="center">
+<img src="https://i.imgur.com/KGbhgmQ.png" height="80%" width="80%" alt="Nessus 128"/>
+<br />
+<br />
+        
+<p align="center">
+<img src="https://i.imgur.com/kL5KqCd.png" height="80%" width="80%" alt="Nessus 129"/>
+<br />
+<br />
+          
+<p align="center">
+<img src="https://i.imgur.com/bIFjH0M.png" height="80%" width="80%" alt="Nessus 130"/>
+<br />
+<br />
+      
 ### Step 3: Configure Nessus Essentials
 1. **Open the Nessus Essentials Web Interface**
    - Open a web browser on your Azure VM and go to `https://localhost:8834/`.
-
+          
+<p align="center">
+<img src="https://i.imgur.com/F5cNqxq.png" height="80%" width="80%" alt="Nessus 131"/>
+<br />
+<br />
+      
 2. **Create a New Scan**
-   - Provide a name "Windows 10 Single Host" for the scan.
-   - In the Azure search tool search "Virtual Machine" > click on "nessuslab-vm" > copy the public IP address and paste it on "Targets" section of Nessus Essentials.
+   - Provide a name "Windows 10 Single Host" for the scan.          
+
+<p align="center">
+<img src="https://i.imgur.com/3sQdY94.png" height="80%" width="80%" alt="Nessus 132"/>
+<br />
+<br />
+
+   - In the Azure search tool search "Virtual Machine" > click on "nessuslab-vm" > copy the public IP address and paste it on "Targets" section of Nessus Essentials.                
+
+<p align="center">
+<img src="https://i.imgur.com/aDuXqtA.png" height="80%" width="80%" alt="Nessus 134"/>
+<br />
+<br />
+                      
+<p align="center">
+<img src="https://i.imgur.com/0pVYBqe.png" height="80%" width="80%" alt="Nessus 144"/>
+<br />
+<br />
+                         
+<p align="center">
+<img src="https://i.imgur.com/eoT9Tf1.png" height="80%" width="80%" alt="Nessus 145"/>
+<br />
+<br />
+         
    - Save the scan configuration.
-     
+    
 ### Step 4: Perform Vulnerability Scans
 1. **Launch the Initial Vulnerability Scan**
-   - Run the scan without credentials by clicking the play button (launch) on "Windows 10 Single Host"
+   - Run the scan without credentials by clicking the play button (launch) on "Windows 10 Single Host"                           
+                           
+<p align="center">
+<img src="https://i.imgur.com/kW7Qn3M.png" height="80%" width="80%" alt="Nessus 146"/>
+<br />
+<br />
+       
    - Review the scan results and identify vulnerabilities.
 
+<p align="center">
+<img src="https://i.imgur.com/9zFCHdV.png" height="80%" width="80%" alt="Nessus 147"/>
+<br />
+<br />
+                                      
+<p align="center">
+<img src="https://i.imgur.com/ihrlUfY.png" height="80%" width="80%" alt="Nessus 148"/>
+<br />
+<br />
+           
 2. **Configure Credential-Based Scanning**
    - Provide the username and password for the Windows 10 virtual machine.
    - Launch a new scan with credentials to discover additional vulnerabilities.

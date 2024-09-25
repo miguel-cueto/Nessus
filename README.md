@@ -253,8 +253,58 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
          
    - Save the scan configuration.
-    
-### Step 4: Perform Vulnerability Scans
+
+## Step 4: Introduce Vulnerabilities and Rescan
+
+1. **In the VM, download an old version of "Firefox Setup 3.6.12.exe" (https://ftp.mozilla.org/pub/firefox/releases/3.6.12/win32/en-US/)
+2. **Install the old Firefox version 
+                           
+<p align="center">
+<img src="https://i.imgur.com/D4KSlvh.png" height="80%" width="80%" alt="Nessus 159"/>
+<br />
+<br />
+                                  
+<p align="center">
+<img src="https://i.imgur.com/zNFlsrI.png" height="80%" width="80%" alt="Nessus 160"/>
+<br />
+<br />
+                                  
+<p align="center">
+<img src="https://i.imgur.com/ETEXRXN.png" height="80%" width="80%" alt="Nessus 161"/>
+<br />
+<br />
+                                  
+<p align="center">
+<img src="https://i.imgur.com/kW7Qn3M.png" height="80%" width="80%" alt="Nessus 162"/>
+<br />
+<br />
+                                         
+<p align="center">
+<img src="https://i.imgur.com/CPR2R1U.png" height="80%" width="80%" alt="Nessus 162"/>
+<br />
+<br />
+                                         
+<p align="center">
+<img src="https://i.imgur.com/YWtqm6Z.png" height="80%" width="80%" alt="Nessus 163"/>
+<br />
+<br />
+                                         
+<p align="center">
+<img src="https://i.imgur.com/M2pn9d9.png" height="80%" width="80%" alt="Nessus 164"/>
+<br />
+<br />
+                                         
+<p align="center">
+<img src="https://i.imgur.com/YJ0Sxxv.png" height="80%" width="80%" alt="Nessus 165"/>
+<br />
+<br />
+                                         
+<p align="center">
+<img src="https://i.imgur.com/Kw9MKsr.png" height="80%" width="80%" alt="Nessus 166"/>
+<br />
+<br />
+       
+### Step 5: Perform Vulnerability Scans
 1. **Launch the Initial Vulnerability Scan**
    - Run the scan without credentials by clicking the play button (launch) on "Windows 10 Single Host"                           
                            
@@ -323,8 +373,9 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
             
 
-### Step 5: Remediate Vulnerabilities
-1. **Run Windows Updates**
+### Step 6: Remediate Vulnerabilities
+1. **Uninstall the old Firefox version from the VM
+2. **Run Windows Updates**
    - Install available security patches and updates on the virtual machine.
 
 <p align="center">
@@ -342,7 +393,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
 <br />
     
-2. **Perform Another Vulnerability Scan**
+3. **Perform Another Vulnerability Scan**
    - Verify the remediation efforts by running another scan.          
 
 <p align="center">

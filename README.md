@@ -36,14 +36,14 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 4. Select the geographic region "East US 2" and availability zone "zone 3"
 
 <p align="center">
-<img src="https://i.imgur.com/UKcpGJA.png" height="80%" width="80%" alt="Nessus 107"/>
+<img src="https://i.imgur.com/fDIgQo0.png" height="80%" width="80%" alt="Nessus 107"/>
 <br />
 <br />
   
 5. Select the image "Windows 10 Pro, version 22H2 - x64 Gen 2."
 
 <p align="center">
-<img src="https://i.imgur.com/TtI8Z8A.png" height="80%" width="80%" alt="Nessus 108"/>
+<img src="https://i.imgur.com/2YwvcQT.png" height="80%" width="80%" alt="Nessus 108"/>
 <br />
 <br />
   

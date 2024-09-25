@@ -256,8 +256,8 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 
 ## Step 4: Introduce Vulnerabilities
 
-1. **In the VM, download an old version of "Firefox Setup 3.6.12.exe" (https://ftp.mozilla.org/pub/firefox/releases/3.6.12/win32/en-US/)
-2. **Install the old Firefox version 
+1. **In the VM, download an old version of "Firefox Setup 3.6.12.exe" (https://ftp.mozilla.org/pub/firefox/releases/3.6.12/win32/en-US/)**
+2. **Install the old Firefox version**
                            
 <p align="center">
 <img src="https://i.imgur.com/D4KSlvh.png" height="80%" width="80%" alt="Nessus 159"/>
@@ -374,7 +374,7 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
             
 
 ### Step 6: Remediate Vulnerabilities
-1. **Uninstall the old Firefox version from the VM
+1. **Uninstall the old Firefox version from the VM**
 2. **Run Windows Updates**
    - Install available security patches and updates on the virtual machine.
 

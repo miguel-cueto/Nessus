@@ -79,39 +79,64 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 10. **Connect to the Virtual Machine**
    - Once the VM is deployed, go to the "Virtual Machines" section in the Azure Portal.
    - Select your VM and click on "Connect" to download the RDP file.
-   - Open the RDP file and connect to your VM using the credentials you set up > Click "Yes" on the certificate windows
 
 <p align="center">
-<img src="https://i.imgur.com/yByOqwW.png" height="80%" width="80%" alt="Azure 66"/>
+<img src="https://i.imgur.com/rnCZwTX.png" height="80%" width="80%" alt="Nessus 112"/>
 <br />
 <br />
   
+   - Open the RDP file and connect to your VM using the credentials you set up > Click "Yes" on the certificate windows
+  
+<p align="center">
+<img src="https://i.imgur.com/198Pep3.png" height="80%" width="80%" alt="Nessus 113"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/2ZaPBsm.png" height="80%" width="80%" alt="Nessus 114"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/RGd7vhY.png" height="80%" width="80%" alt="Nessus 115"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/BXwwFxZ.png" height="80%" width="80%" alt="Nessus 116"/>
+<br />
+<br />
 11. In the VM set up toggle "no" on all privacy settings, press "yes" for networks, and start Microsoft Edge without your data
 
 <p align="center">
-<img src="https://i.imgur.com/YNGZg98.png" height="80%" width="80%" alt="Azure 67"/>
+<img src="https://i.imgur.com/zeNA3i1.png" height="80%" width="80%" alt="Nessus 117"/>
 <br />
 <br />
   
 <p align="center">
-<img src="https://i.imgur.com/jU7WItx.png" height="80%" width="80%" alt="Azure 68"/>
+<img src="https://i.imgur.com/227nHv5.png" height="80%" width="80%" alt="Nessus 118"/>
+<br />
+<br />
+  
+<p align="center">
+<img src="https://i.imgur.com/xmDjaMI.png" height="80%" width="80%" alt="Nessus 119"/>
 <br />
 <br />
   
 12. Open the Windows Defender Firewall (wf.msc) in the VM > click Windows Defender Firewall Properties and turn off the firewall for all profiles (Domain, Private, and Public).
 
 <p align="center">
-<img src="https://i.imgur.com/R3UArjv.png" height="80%" width="80%" alt="Azure 69"/>
+<img src="https://i.imgur.com/R3UArjv.png" height="80%" width="80%" alt="Nessus 115"/>
 <br />
 <br />
   
 <p align="center">
-<img src="https://i.imgur.com/IuoA6EW.png" height="80%" width="80%" alt="Azure 70"/>
+<img src="https://i.imgur.com/IuoA6EW.png" height="80%" width="80%" alt="Nessus 116"/>
 <br />
 <br />
   
 <p align="center">
-<img src="https://i.imgur.com/bJkJicN.png" height="80%" width="80%" alt="Azure 71"/>
+<img src="https://i.imgur.com/bJkJicN.png" height="80%" width="80%" alt="Nessus 112"/>
 <br />
 <br />
   

@@ -375,6 +375,32 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 
 ### Step 6: Remediate Vulnerabilities
 1. **Uninstall the old Firefox version from the VM**
+
+<p align="center">
+<img src="https://i.imgur.com/EiMe7M3.png" height="80%" width="80%" alt="Nessus 196"/>
+<br />
+<br />
+            
+<p align="center">
+<img src="https://i.imgur.com/iL2uEmZ.png" height="80%" width="80%" alt="Nessus 197"/>
+<br />
+<br />
+            
+<p align="center">
+<img src="https://i.imgur.com/VtnCFwy.png" height="80%" width="80%" alt="Nessus 198"/>
+<br />
+<br />
+            
+<p align="center">
+<img src="https://i.imgur.com/af8BBPf.png" height="80%" width="80%" alt="Nessus 199"/>
+<br />
+<br />
+
+<p align="center">
+<img src="https://i.imgur.com/xFxSaIh.png" height="80%" width="80%" alt="Nessus 200"/>
+<br />
+<br />
+                              
 2. **Run Windows Updates**
    - Install available security patches and updates on the virtual machine.
 
@@ -402,3 +428,19 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
     
    - Review the remaining vulnerabilities and take additional remediation steps as necessary.
+
+<p align="center">
+<img src="https://i.imgur.com/lndzqTI.png" height="80%" width="80%" alt="Nessus 202"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/3Av0kia.png" height="80%" width="80%" alt="Nessus 203"/>
+<br />
+<br />
+    
+<p align="center">
+<img src="https://i.imgur.com/sid1n2Q.png" height="80%" width="80%" alt="Nessus 204"/>
+<br />
+<br />
+    

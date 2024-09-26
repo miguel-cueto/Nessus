@@ -445,22 +445,22 @@ This project provides a step-by-step guide for setting up a Nessus vulnerability
 <br />
     
 ### Step 7: Clean Up Resources (Optional)
-1. Go to the  Azure portal > Find your resource group (honeypotlab) > Click on Delete resource group. This will delete all resources within the group, including the VM and Log Analytics workspace if you haven’t deleted them individually.
+1. Go to the  Azure portal > Find your resource group (nessuslab) > Click on Delete resource group. This will delete all resources within the group, including the VM and Log Analytics workspace if you haven’t deleted them individually.
 
 <p align="center">
-<img src="https://i.imgur.com/ahgyQTN.png" height="80%" width="80%" alt="Azure 100"/>
+<img src="https://i.imgur.com/s44kuTQ.png" height="80%" width="80%" alt="Nessus 206"/>
 <br />
 <br />
   
 <p align="center">
-<img src="https://i.imgur.com/MvQXIYh.png" height="80%" width="80%" alt="Azure 101"/>
+<img src="https://i.imgur.com/k4UqRvM.png" width="80%" alt="Nessus 208"/>
 <br />
 <br />
   
-2. Check the box "Apply force delete for selected Virtual machines and Virtual machine scale sets" and write the name of the resource group "honeypotlab" then click "Delete."
+2. Check the box "Apply force delete for selected Virtual machines and Virtual machine scale sets" and write the name of the resource group "nessuslab" then click "Delete."
 
 <p align="center">
-<img src="https://i.imgur.com/nSFtcZi.png" height="80%" width="80%" alt="Azure 102"/>
+<img src="https://i.imgur.com/wqdkT2z.png" height="80%" width="80%" alt="Nessus 209"/>
 <br />
 <br />
   
